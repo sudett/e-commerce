@@ -4,7 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "db:init": "node dist/db/database.js"
+    "db:init": "node dist/db/database.js",
+    "db:seed": "node dist/db/seed.js",
+    "build": "tsc --watch",
+    "start": "node dist/server.js"
   },
   "keywords": [],
   "author": "",
