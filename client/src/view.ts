@@ -15,7 +15,7 @@ function createProductItem(product: ProductItem) {
   productEl.dataset.id = `${product.id}`;
 
   const productImageContainer = document.createElement("a");
-  productImageContainer.href = `/client/product-details.html?id=${product.id}`;
+  productImageContainer.href = `/product-details.html?id=${product.id}`;
   productImageContainer.target = "_self";
 
   const productImage = document.createElement("img");
