@@ -64,8 +64,11 @@ createServer(async (req, res) => {
 
   // serve html file and images
   try {
+    const clientRouts = ["/", "/men", "/women", "/products"];
     const pathname = url.pathname ?? "/";
-    const relativePath = pathname === "/" ? "index.html" : pathname.slice(1);
+    const relativePath = clientRouts.includes(pathname)
+      ? "index.html"
+      : pathname.slice(1);
     const filePath = resolve(clientDir, relativePath);
 
     // prevents requests from accessing files outside the client folder

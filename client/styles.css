@@ -41,7 +41,7 @@ nav {
   color: chocolate;
 }
 
-main {
+main:not(#app) {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 1rem;

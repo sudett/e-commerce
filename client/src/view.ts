@@ -7,7 +7,7 @@ import {
 import { state } from "./store.js";
 import { CART_EVENTS, CartEvent, ProductItem } from "./types.js";
 
-const main = document.querySelector("main");
+const main = document.querySelector(".main-container");
 
 function createProductItem(product: ProductItem) {
   const productEl = document.createElement("article");
